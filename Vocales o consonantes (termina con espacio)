@@ -1,1 +1,23 @@
+Clasificar caracteres hasta presionar espacio usando 'while'
+vocales_cnt = 0
+consonantes_cnt = 0
 
+print("Ingresa caracteres uno por uno (ingresa un espacio ' ' para terminar):")
+
+while True:
+    caracter = input("Caracter: ")
+    if caracter == " ":
+        break
+    
+    if len(caracter) == 1 and caracter.isalpha():
+        c = caracter.lower()
+        if c in 'aeiouáéíóú':
+            vocales_cnt += 1
+        else:
+            consonantes_cnt += 1
+    else:
+        print("Por favor ingresa únicamente una letra individual.")
+
+print(f"\nResumen:")
+print(f"Vocales ingresadas: {vocales_cnt}")
+print(f"Consonantes ingresadas: {consonantes_cnt}")
