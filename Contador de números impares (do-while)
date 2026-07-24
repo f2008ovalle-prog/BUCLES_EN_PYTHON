@@ -1,1 +1,15 @@
+Imprimir números impares en un rango [1, N] (Emulación 'do-while')
+limite = int(input("Ingresa el límite superior (N): "))
+i = 1
 
+if limite < 1:
+    print("El límite debe ser un entero mayor o igual a 1.")
+else:
+    print(f"Números impares del 1 al {limite}:")
+    while True:
+        if i % 2 != 0:
+            print(i, end=" ")
+        i += 1
+        if i > limite:
+            break
+    print()
