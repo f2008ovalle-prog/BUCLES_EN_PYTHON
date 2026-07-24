@@ -1,1 +1,18 @@
+# 8. Promedio de números positivos (termina con negativo) usando 'while'
+suma = 0.0
+contador = 0
 
+print("Ingresa números positivos (ingresa un número negativo para finalizar):")
+
+while True:
+    num = float(input("Número: "))
+    if num < 0:
+        break
+    suma += num
+    contador += 1
+
+if contador > 0:
+    media = suma / contador
+    print(f"La media de los {contador} números positivos ingresados es: {media:.2f}")
+else:
+    print("No se ingresaron números positivos.")
