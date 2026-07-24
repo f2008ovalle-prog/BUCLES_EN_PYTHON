@@ -1,1 +1,9 @@
+Contar apariciones de la letra 'a' o 'A' usando 'for'
+palabra = input("Ingresa una palabra o frase: ")
+contador = 0
 
+for caracter in palabra:
+    if caracter.lower() == 'a':
+        contador += 1
+
+print(f"La letra 'a' aparece {contador} vez/veces.")
