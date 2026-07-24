@@ -1,1 +1,13 @@
+# 11. Generar la secuencia de los primeros N cuadrados perfectos (Emulación 'do-while')
+n = int(input("¿Cuántos cuadrados perfectos deseas generar?: "))
+i = 1
 
+if n <= 0:
+    print("Debes ingresar un número entero positivo mayor a cero.")
+else:
+    print(f"Los primeros {n} cuadrados perfectos son:")
+    while True:
+        print(f"{i}^2 = {i**2}")
+        i += 1
+        if i > n:
+            break
