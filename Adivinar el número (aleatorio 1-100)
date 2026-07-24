@@ -1,1 +1,20 @@
+# 6. Juego para adivinar un número aleatorio usando 'while'
+import random
 
+secreto = random.randint(1, 100)
+intentos = 0
+adivinado = False
+
+print("¡Adivina el número secreto entre 1 y 100!")
+
+while not adivinado:
+    intento = int(input("Ingresa tu número: "))
+    intentos += 1
+    
+    if intento < secreto:
+        print("El número secreto es MAYOR.")
+    elif intento > secreto:
+        print("El número secreto es MENOR.")
+    else:
+        adivinado = True
+        print(f"¡Correcto! Lo adivinaste en {intentos} intento(s).")
