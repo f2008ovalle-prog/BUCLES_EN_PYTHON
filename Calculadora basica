@@ -1,4 +1,3 @@
-# 9. Calculadora con menú repetitivo (Emulación 'do-while')
 while True:
     print("\n--- CALCULADORA BÁSICA ---")
     print("1. Sumar")
