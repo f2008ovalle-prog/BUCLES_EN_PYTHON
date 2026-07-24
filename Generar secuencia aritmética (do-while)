@@ -1,4 +1,4 @@
-# 12. Generar una progresión aritmética (Emulación 'do-while')
+Generar una progresión aritmética (Emulación 'do-while')
 a1 = float(input("Ingresa el primer término (a1): "))
 d = float(input("Ingresa la diferencia común (d): "))
 n = int(input("Ingresa el número de términos (N): "))
