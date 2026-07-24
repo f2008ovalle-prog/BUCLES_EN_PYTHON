@@ -7,3 +7,4 @@ for caracter in palabra:
         contador += 1
 
 print(f"La letra 'a' aparece {contador} vez/veces.")
+
